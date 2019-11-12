@@ -10,7 +10,7 @@ export class DispositiveController {
     return this.service.all();
   }
   @Post('create')
-  create(@Body() dispositive: Dispositive) {
-    return this.service.create(dispositive);
+  async create(@Body() dispositive: Dispositive) {
+    return await this.service.create(dispositive);
   }
 }

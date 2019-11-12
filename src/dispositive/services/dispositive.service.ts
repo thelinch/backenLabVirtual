@@ -22,6 +22,8 @@ export class DispositiveService {
     dispositive.typeDispositive = await this.typeDispositiveService.getByType(
       dispositive.type,
     );
+    delete dispositive.type;
+    console.log('dispositive ', dispositive.name, dispositive);
     return await this.dispositiveRepository.save(dispositive);
   }
 }

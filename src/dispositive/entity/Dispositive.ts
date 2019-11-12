@@ -13,23 +13,27 @@ import { MaestroDispositive } from './Maestro_dispositive';
 export class Dispositive {
   @PrimaryGeneratedColumn()
   id!: number;
-  @Column()
+  @Column({ default: 'nuevo' })
   name!: string;
   @ManyToOne(
     type => TypeDispositive,
     typeDispositive => typeDispositive.dispositives,
     {
       cascade: true,
+      nullable: false,
     },
   )
   typeDispositive!: TypeDispositive;
   @OneToMany(
     type => MaestroDispositive,
     maestroDispositive => maestroDispositive.dispositive,
-    { cascade: true },
+    { cascade: true, nullable: false },
   )
   maestroDispositive!: MaestroDispositive[];
-  @ManyToOne(type => Red, red => red.dispositives, { cascade: true })
+  @ManyToOne(type => Red, red => red.dispositives, {
+    cascade: true,
+    nullable: false,
+  })
   red: Red;
   @Column()
   x: number;
