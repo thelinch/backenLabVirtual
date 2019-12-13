@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Maestro } from '../entity/Maestro';
+import { Maestro } from '../../models/Maestro';
 import { Repository } from 'typeorm';
 
 @Controller('maestro')

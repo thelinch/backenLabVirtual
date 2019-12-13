@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body, Param } from '@nestjs/common';
 import { RedService } from '../service/red.service';
-import { Red } from '../entity/red.entity';
+import { Red } from '../../models/red.entity';
 
 @Controller('red')
 export class RedControllerController {

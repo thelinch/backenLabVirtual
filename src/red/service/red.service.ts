@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { RedRepository } from '../respository/red.repository';
-import { Red } from '../entity/red.entity';
+import { Red } from '../../models/red.entity';
 @Injectable()
 export class RedService {
   constructor(private readonly redRespository: RedRepository) {}

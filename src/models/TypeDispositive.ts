@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
 import { Dispositive } from './Dispositive';
-import { typeDispositiveEnum } from '../enum/typeDispositive.enum';
+import { typeDispositiveEnum } from './enum/typeDispositive.enum';
 
 @Entity()
 export class TypeDispositive {

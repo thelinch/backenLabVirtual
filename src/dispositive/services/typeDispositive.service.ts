@@ -1,9 +1,9 @@
 import { TypeDispositiveDtoResponse } from './../dto/typeDispositive.dto.response';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { TypeDispositive } from '../entity/TypeDispositive';
 import { Repository } from 'typeorm';
-import { typeDispositiveEnum } from '../enum/typeDispositive.enum';
+import { TypeDispositive } from '../../models/TypeDispositive';
+import { typeDispositiveEnum } from '../../models/enum/typeDispositive.enum';
 
 @Injectable()
 export class TypeDispositiveService {

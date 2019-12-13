@@ -1,4 +1,3 @@
-import { Red } from './../../red/entity/red.entity';
 import {
   Entity,
   PrimaryGeneratedColumn,
@@ -8,6 +7,7 @@ import {
 } from 'typeorm';
 import { TypeDispositive } from './TypeDispositive';
 import { MaestroDispositive } from './Maestro_dispositive';
+import { Red } from './red.entity';
 
 @Entity()
 export class Dispositive {

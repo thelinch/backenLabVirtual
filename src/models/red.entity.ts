@@ -1,5 +1,5 @@
-import { Dispositive } from './../../dispositive/entity/Dispositive';
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
+import { Dispositive } from './Dispositive';
 
 @Entity()
 export class Red {

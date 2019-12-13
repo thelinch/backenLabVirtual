@@ -1,5 +1,5 @@
 import { Controller, Get, Post, Body } from '@nestjs/common';
-import { Dispositive } from '../entity/Dispositive';
+import { Dispositive } from '../../models/Dispositive';
 import { DispositiveService } from '../services/dispositive.service';
 
 @Controller('dispositive')

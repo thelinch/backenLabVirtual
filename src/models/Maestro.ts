@@ -6,7 +6,7 @@ import {
   OneToMany
 } from "typeorm";
 import { MaestroDispositive } from "./Maestro_dispositive";
-import { MaestroEnum } from "../enum/Mestro.enum";
+import { MaestroEnum } from "./enum/Mestro.enum";
 
 @Entity()
 export class Maestro {
