@@ -20,5 +20,15 @@ export class RedService {
   async update(id: number, newDataRed: Red) {
     return await this.redRespository.update(id, newDataRed);
   }
-  
+  async getDispositiveFindRed(id: number) {
+    let red = await this.redRespository.findOne(id, {
+      relations: [
+        'dispositives',
+        'dispositives.typeDispositive',
+        'dispositives.maestroDispositive',
+        'dispositives.maestroDispositive.maestro',
+      ],
+    });
+    return red.dispositives;
+  }
 }

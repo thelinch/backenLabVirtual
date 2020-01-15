@@ -17,4 +17,8 @@ export class RedControllerController {
   async getById(@Param() id: number) {
     return await this.redService.getFindById(id);
   }
+  @Get(':id/dispositives')
+  async getDispositiveByRedId(@Param() id: number) {
+    return await this.redService.getDispositiveFindRed(id);
+  }
 }

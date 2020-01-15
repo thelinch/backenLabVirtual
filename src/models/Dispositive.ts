@@ -21,6 +21,7 @@ export class Dispositive {
     {
       cascade: true,
       nullable: false,
+      eager: true,
     },
   )
   typeDispositive!: TypeDispositive;
